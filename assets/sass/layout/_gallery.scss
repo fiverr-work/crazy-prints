@@ -1,0 +1,55 @@
+#gallery {
+	.owl-carousel {
+		padding-top: 71px;
+		padding-bottom: 113px;
+
+		.gallery-info {
+			position: relative;
+			border-radius: 20px;
+			overflow: hidden;
+			cursor: pointer;
+			.background {
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				background-color: rgba(0, 0, 0, 0.8);
+				@include flex(center, center);
+				transition: opacity $duration-1 $timing-1;
+				opacity: 0;
+
+				button {
+					min-width: 80%;
+				}
+			}
+			&:hover .background {
+				opacity: 1;
+				transition: opacity $duration-1 $timing-1;
+			}
+			img {
+				height: 400px;
+				object-fit: cover;
+				margin: 0 auto;
+			}
+		}
+
+		@include for-size(lg-up) {
+			transition: transform $duration-1 $timing-1;
+			.owl-stage-outer {
+				overflow: visible !important;
+			}
+			.owl-item:hover {
+				transform: translateY(10px);
+				transition: transform $duration-1 $timing-1;
+			}
+		}
+		@include for-size(lg-down) {
+			padding-top: 33px;
+			padding-bottom: 33px;
+			img {
+				width: 100% !important;
+			}
+		}
+	}
+}

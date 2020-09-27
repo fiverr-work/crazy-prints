@@ -1,0 +1,47 @@
+#how-it-works {
+	.owl-carousel {
+		padding-bottom: 62px;
+
+		.row {
+			width: 100%;
+			margin: 0;
+			& > div {
+				@include flex(flex-start, center);
+				&:first-child {
+					justify-content: center;
+				}
+			}
+			h1 {
+				margin-bottom: 35px;
+				color: $secondary-color;
+			}
+		}
+		.owl-dots {
+			&::after {
+				content: "SWIPE TO SEE MORE";
+				opacity: 0.4;
+				display: block;
+				font-size: $size-0;
+			}
+		}
+		@include for-size(lg-down) {
+			text-align: center;
+			padding-top: 10px !important;
+			padding-bottom: 33px !important;
+
+			.row {
+				justify-content: space-between;
+				height: 100%;
+				& > div {
+					justify-content: center;
+					&:first-child {
+						order: 2;
+					}
+				}
+				h1 {
+					margin-bottom: 6px;
+				}
+			}
+		}
+	}
+}

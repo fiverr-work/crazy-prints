@@ -1,0 +1,44 @@
+#about {
+	margin-bottom: 85px;
+	h1 {
+		margin-bottom: 35px;
+	}
+	.play-rect {
+		@include flex(center, center);
+		height: 354px;
+		background-color: #c4c4c4;
+		cursor: pointer;
+		&:hover img {
+			opacity: 0.8;
+		}
+	}
+
+	iframe {
+		margin: 0 auto;
+		width: 90%;
+		height: 80vh;
+	}
+
+	@include for-size(lg-down) {
+		margin-bottom: 42px;
+		h1 {
+			margin-bottom: 30px;
+			text-align: center;
+		}
+		h3 {
+			margin-bottom: 18px;
+		}
+		.play-rect {
+			margin-bottom: 30px;
+		}
+	}
+	@include for-size(md-down) {
+		.play-rect {
+			height: 165px;
+		}
+		iframe {
+			width: 100%;
+			height: 280px;
+		}
+	}
+}

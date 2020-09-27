@@ -1,0 +1,64 @@
+@import "../components/menu-icon";
+
+.navbar {
+	background-color: $white-color;
+	transition: box-shadow $duration-1 $timing-1;
+	&.on-scroll {
+		transition: box-shadow $duration-1 $timing-1;
+		@extend .shadow;
+	}
+	.container {
+		.brand {
+			margin-right: 48px;
+		}
+		.nav-content {
+			display: flex;
+			flex: 2;
+			align-items: center;
+			.nav-link {
+				padding: 16px;
+
+				&:hover,
+				&.active {
+					color: $secondary-color;
+				}
+			}
+		}
+	}
+	@include for-size(md-down) {
+		.container {
+			position: relative;
+
+			.brand {
+				margin: 0 auto;
+			}
+			.nav-content {
+				background: $white-color;
+				position: fixed;
+				top: 0;
+				right: -900px;
+				bottom: 0;
+				width: 100%;
+				flex-direction: column;
+				justify-content: center;
+				transition: right 400ms ease-in;
+				z-index: 9;
+				&.is-active {
+					right: 0;
+					transition: right 400ms ease-out;
+				}
+				& > * {
+					width: 100%;
+					text-align: center;
+				}
+			}
+
+			.menu-icon-wrapper {
+				display: block !important;
+				position: absolute;
+				top: -4px;
+				left: -7px;
+			}
+		}
+	}
+}

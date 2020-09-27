@@ -1,0 +1,43 @@
+// Colors
+$primary-color: #2f2e41;
+$primary-color-2: #3f3d56;
+$primary-color-3: #504f60;
+$secondary-color: #ebb268;
+$white-color: #ffffff;
+
+// Font-Sizes
+$size-0: 14px;
+$size-1: 16px;
+$size-2: 18px;
+$size-3: 20px;
+$size-4: 24px;
+$size-5: 34px;
+$size-6: 40px;
+$size-7: 50px;
+$size-8: 80px;
+
+// Font-Family
+$primary-regular: "Poppins Regular";
+$primary-medium: "Poppins Medium";
+$primary-SemiBold: "Poppins Semibold";
+$primary-bold: "Poppins Bold";
+
+$secondary-regular: "Montserrat Regular";
+
+// Font Paths
+$primary-regular-path: "../fonts/Poppins/Poppins-Regular.ttf";
+$primary-medium-path: "../fonts/Poppins/Poppins-Medium.ttf";
+$primary-SemiBold-path: "../fonts/Poppins/Poppins-SemiBold.ttf";
+$primary-bold-path: "../fonts/Poppins/Poppins-Bold.ttf";
+
+$secondary-regular-path: "../fonts/Montserrat/Montserrat-Regular.ttf";
+
+// Breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+// Transition
+$duration-1: 300ms; // duration
+$timing-1: ease-in-out; //timing function

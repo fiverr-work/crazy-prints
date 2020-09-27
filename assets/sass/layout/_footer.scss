@@ -1,0 +1,33 @@
+footer {
+	padding: 18px 0 37px;
+	border-top: 2px solid $secondary-color;
+	text-align: center;
+
+	.links {
+		@include flex(center, center);
+		width: 100%;
+		flex-wrap: wrap;
+		a {
+			margin: 0 5px;
+			padding: 4px 12px;
+		}
+	}
+	.social-media {
+		margin: 25px auto;
+		@include flex(center, center);
+		a {
+			margin: 0 20px;
+
+			svg {
+				height: 23px;
+			}
+			&:hover {
+				svg {
+					path {
+						fill: $secondary-color;
+					}
+				}
+			}
+		}
+	}
+}

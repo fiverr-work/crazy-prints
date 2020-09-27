@@ -1,0 +1,29 @@
+// 2 - Vendors;
+@import "vendors/bootstrap";
+@import "vendors/animate";
+@import "vendors/magic";
+@import "vendors/owl.carousel";
+
+// 1 - Utils
+@import "utils/variables";
+@import "utils/mixins";
+@import "utils/helpers";
+
+// 3 - Base;
+@import "base/reset";
+@import "base/typography";
+
+// 4 - Layout;
+@import "layout/navbar";
+@import "layout/hero";
+@import "layout/about";
+@import "layout/how-it-works";
+@import "layout/gallery";
+@import "layout/testimonials";
+@import "layout/order";
+@import "layout/footer";
+
+// 5 - Components;
+@import "components/buttons";
+@import "components/inputs";
+@import "components/carousel";
